@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script src='https://cdn.jsdelivr.net/npm/big.js@6.0.0/big.min.js'></script>-->
+    <script type="text/javascript" async="" src="model.js"></script>
+    <!--<script type="text/javascript" async="" src="model_big.js"></script>-->
+    <!--<script type="text/javascript" async="" src="model_chart.js"></script>-->
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.esm.min.js" integrity="sha512-SaY95UIbYlNfmc6tZOtqEWMyDHpIKJwXCPfDZNvgudlFZiJjMU3XJNrSnkVCL/3b7szsoU3hDXpUz6+TdLY1ag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/helpers.esm.min.js" integrity="sha512-urWBnIv+F027G24xDNigjxvIuwnWlWy94W2yx77VkISKLzKSohOKOubMDhtEF6LZcEH7gctmNSpxDqIW/zMmUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <style>
+    body {
+      font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+      font-size: 16px;
+      color: #000;
+    }
+    main {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    }
+      .plot_wrapper {
+          width: 800px;
+          height: 500px;
+      }
+
+      .input_fields {
+        max-width: 600px;
+      }
+      .input_fields h2 {
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 5;
+      }
+      .input_fields h2 .toggle_button {
+        margin-left: auto;
+      }
+
+      .form {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-gap: 0.3em 0.6em;
+  grid-auto-flow: dense;
+  align-items: center;
+}
+div.hidden {
+  display: none !important;
+}
+        label, input {
+          font-size: 0.8em;
+        }
+        .form input {
+          padding: 5px;
+        }
+        .input_fields button {
+          margin-left: auto;
+          margin-right: 0;
+          display: block;
+          padding: 10px;
+          margin-top: 6px;
+        }
+
+        div input[type="radio"]:first-of-type {
+  margin-left: 0;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+    <h1>SIR transmission model</h1>
+    <div id="model" class="model_wrapper"></div>
+    <!--<button id="addintervention">Add intervention</button>-->
+    <script>
+      /*window.onload = function(){
+        console.log("LOADED");
+
+        document.getElementById("addintervention").addEventListener("click", ()=>{
+          console.log("add intervention");
+
+
+          let intervention_wrapper = document.createElement("div");
+          let intervention_start_types = ["time", "prevalence"];
+          let parameter_change_types = ["change to value", "% increase", "% decrease"];
+
+        })
+      }
+
+
+      //Make class for interventions
+      let Intervention = class {
+
+      }*/
+    </script>
+  </main>
+  </body>
+</html>

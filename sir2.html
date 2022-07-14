@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Need to include 3 files:
+          - chart.min.js (Chart.JS is a ligthweight open-source library to plot charts - currently loaded from cloudflare)
+          - app/model.js (JS code needed for the model-app - depends on Chart.JS)
+          - app/style.css (CSS for model-app) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="model2.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media=”screen” />
+    <!-- inline style for page, not specific for app -->
+    <style>
+      body {
+        font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+        font-size: 16px;
+        color: #000;
+      }
+
+      main {
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+       <img src="files/LSHTM_Logo_Black.jpg" alt="London School of Hygiene and Tropical Medicine" width="195px">
+       <h1>SIR transmission model</h1>
+       <!-- There needs to be one div with id: model and class: model_wrapper on the page, to embed the app in an existing page -->
+       <div id="model" class="model_wrapper"></div>
+       <!-- There is one specific JS file for each new model that can be implemented -->
+       <script type="text/javascript" src="model_sir2.js"></script>
+     </main>
+  </body>
+</html>
